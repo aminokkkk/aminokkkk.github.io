@@ -292,18 +292,18 @@
   }
 
   /* ---------------------------------------------------------
-     10. ENERGY SURGE 배경 영상
+     10. 브랜드 필름
      화면에 들어올 때만 재생하고 벗어나면 정지합니다(배터리·데이터 절약).
      자동재생은 브라우저 정책상 muted 상태에서만 허용되므로,
      소리는 사용자가 버튼을 눌렀을 때만 켜집니다.
      --------------------------------------------------------- */
-  var surgeVideo = $('#surgeVideo');
-  var surgeSound = $('#surgeSound');
-  var surgeLabel = $('#surgeSoundLabel');
+  var filmVideo = $('#filmVideo');
+  var filmSound = $('#filmSound');
+  var filmLabel = $('#filmSoundLabel');
 
-  if (surgeVideo) {
+  if (filmVideo) {
     var tryPlay = function () {
-      var p = surgeVideo.play();
+      var p = filmVideo.play();
       if (p && typeof p.catch === 'function') { p.catch(function () {}); }
     };
 
@@ -311,24 +311,24 @@
       var vio = new IntersectionObserver(function (entries) {
         entries.forEach(function (e) {
           if (e.isIntersecting) { tryPlay(); }
-          else if (!surgeVideo.paused) { surgeVideo.pause(); }
+          else if (!filmVideo.paused) { filmVideo.pause(); }
         });
       }, { threshold: 0.25 });
-      vio.observe(surgeVideo);
+      vio.observe(filmVideo);
     }
 
     // 탭이 백그라운드로 가면 정지
     document.addEventListener('visibilitychange', function () {
-      if (document.hidden && !surgeVideo.paused) surgeVideo.pause();
+      if (document.hidden && !filmVideo.paused) filmVideo.pause();
     });
 
-    if (surgeSound) {
-      surgeSound.addEventListener('click', function () {
-        var on = surgeVideo.muted;               // 켜려는 방향
-        surgeVideo.muted = !on;
-        surgeSound.setAttribute('aria-pressed', on ? 'true' : 'false');
-        surgeSound.setAttribute('aria-label', on ? '배경 영상 소리 끄기' : '배경 영상 소리 켜기');
-        if (surgeLabel) surgeLabel.textContent = on ? '소리 끄기' : '소리 켜기';
+    if (filmSound) {
+      filmSound.addEventListener('click', function () {
+        var on = filmVideo.muted;                // 켜려는 방향
+        filmVideo.muted = !on;
+        filmSound.setAttribute('aria-pressed', on ? 'true' : 'false');
+        filmSound.setAttribute('aria-label', on ? '영상 소리 끄기' : '영상 소리 켜기');
+        if (filmLabel) filmLabel.textContent = on ? '소리 끄기' : '소리 켜기';
         if (on) tryPlay();                       // 소리를 켤 때는 재생도 보장
       });
     }
