@@ -13,6 +13,8 @@
   --muted-2:#828A98;
   --red:#E31C2E;
   --red-2:#FF4A3D;
+  --blue:#3E8BFF;
+  --ink-black:#05070E;
   --line-on-dark:rgba(255,255,255,.14);
   --line-on-light:rgba(14,16,21,.10);
   --white:#FFFFFF;
@@ -609,7 +611,80 @@ footer{ background:var(--navy); color:rgba(255,255,255,.55); border-top:1px soli
 }
 
 /* =========================================================
-   15. 모션 최소화 선호 사용자 대응
+   15. 네온 / 스피드 (스마트스토어 상세페이지 톤 반영)
+   ========================================================= */
+.hl-red { color:var(--red);  text-shadow:0 0 28px rgba(227,28,46,.55); }
+.hl-blue{ color:var(--blue); text-shadow:0 0 28px rgba(62,139,255,.55); }
+
+/* 사선 스피드 라인 */
+.streaks{ position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:0; }
+.streak{
+  position:absolute; left:-45%; height:2px; width:42%;
+  background:linear-gradient(90deg, transparent, var(--red), transparent);
+  transform: skewY(-11deg); opacity:0;
+  animation: streak 3.4s linear infinite;
+}
+.streak.b{ background:linear-gradient(90deg, transparent, var(--blue), transparent); }
+.streak:nth-child(1){ top:14%; animation-delay:0s;   }
+.streak:nth-child(2){ top:31%; animation-delay:.7s;  width:30%; }
+.streak:nth-child(3){ top:48%; animation-delay:1.4s; }
+.streak:nth-child(4){ top:66%; animation-delay:2.1s; width:34%; }
+.streak:nth-child(5){ top:82%; animation-delay:2.8s; width:26%; }
+@keyframes streak{
+  0%  { left:-45%; opacity:0; }
+  10% { opacity:.85; }
+  90% { opacity:.85; }
+  100%{ left:112%; opacity:0; }
+}
+
+/* 문제 제기 섹션 */
+.problem{
+  background:var(--ink-black); color:#fff; text-align:center; overflow:hidden;
+  border-top:1px solid rgba(255,255,255,.06);
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+.problem::before{
+  content:''; position:absolute; left:50%; top:-30%; width:min(1100px,120vw); aspect-ratio:1;
+  transform:translateX(-50%);
+  background:radial-gradient(closest-side, rgba(62,139,255,.16), transparent 70%);
+  pointer-events:none;
+}
+.problem .wrap{ position:relative; z-index:2; }
+.problem .big-num{
+  font-family:var(--display); line-height:.86;
+  font-size:clamp(96px, 17vw, 230px); letter-spacing:-.02em;
+  background:linear-gradient(180deg, #ffffff 8%, rgba(255,255,255,.10) 92%);
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+  filter: drop-shadow(0 0 40px rgba(62,139,255,.25));
+}
+.problem h2{
+  font-family:var(--display-ko); font-weight:900;
+  font-size:clamp(28px, 5.4vw, 66px); line-height:1.16; letter-spacing:-.042em;
+  margin-top:8px;
+}
+.problem .p-sub{
+  margin:26px auto 0; max-width:560px;
+  font-size:clamp(15px,1.7vw,17px); line-height:1.85; color:rgba(255,255,255,.66);
+}
+.problem .p-meta{
+  margin-top:40px; display:inline-flex; align-items:center; gap:12px;
+  padding:11px 22px; border-radius:999px;
+  border:1px solid rgba(255,255,255,.16); background:rgba(255,255,255,.04);
+  font-size:13px; font-weight:700; color:rgba(255,255,255,.8); letter-spacing:.01em;
+}
+.problem .p-meta .dot{ width:8px; height:8px; border-radius:50%; background:var(--red); animation:dotBeat 1.8s ease-in-out infinite; }
+
+/* 다크 섹션 네온 강화 */
+.dark .h-lg em, .story-quote .accent{ text-shadow:0 0 30px rgba(227,28,46,.4); }
+.triple .cell:hover{ box-shadow: inset 0 0 40px rgba(62,139,255,.10); }
+.curve-svg-box{ filter: drop-shadow(0 0 26px rgba(62,139,255,.14)); }
+
+@media (max-width: 560px){
+  .problem .big-num{ font-size:clamp(80px, 26vw, 130px); }
+}
+
+/* =========================================================
+   16. 모션 최소화 선호 사용자 대응
    ========================================================= */
 @media (prefers-reduced-motion: reduce){
   *, *::before, *::after{
