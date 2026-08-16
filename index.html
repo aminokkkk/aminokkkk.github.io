@@ -443,6 +443,156 @@
   </div>
 </section>
 
+<!-- ============ 4컷 만화 ============ -->
+<section class="toon section-pad" id="toon">
+  <svg class="toon-sprite" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="tnBg" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#101A33"/><stop offset="100%" stop-color="#070B16"/>
+      </linearGradient>
+      <radialGradient id="tnProdGlow" cx="50%" cy="50%">
+        <stop offset="0%" stop-color="#3E8BFF" stop-opacity=".55"/>
+        <stop offset="100%" stop-color="#3E8BFF" stop-opacity="0"/>
+      </radialGradient>
+      <filter id="tnGlow" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur stdDeviation="7" result="b"/>
+        <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+  </svg>
+
+  <div class="wrap">
+    <div class="toon-head">
+      <p class="label reveal">4-CUT STORY</p>
+      <h2 class="h-lg mask">
+        <span class="ln"><i>누가, 왜</i></span>
+        <span class="ln"><i>AMINO <em>K</em>를 먹는가.</i></span>
+      </h2>
+    </div>
+
+    <div class="toon-grid" data-stagger="0.1">
+
+      <!-- 1컷 -->
+      <figure class="toon-panel reveal">
+        <span class="toon-no">01</span>
+        <div class="toon-art">
+          <svg viewBox="0 0 400 300" role="img" aria-label="경기 후반, 무릎에 손을 짚고 지쳐 있는 선수와 거의 비어버린 연료 게이지">
+            <rect width="400" height="300" fill="url(#tnBg)"/>
+            <circle cx="58" cy="38" r="26" fill="rgba(255,255,255,.055)"/>
+            <circle cx="344" cy="32" r="19" fill="rgba(255,255,255,.045)"/>
+            <text x="26" y="48" fill="rgba(255,255,255,.42)" font-size="21" font-family="Anton">7TH INNING</text>
+            <line x1="0" y1="252" x2="400" y2="252" stroke="rgba(255,255,255,.16)" stroke-width="2"/>
+            <g stroke="#76839C" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M208 136 L178 172"/>
+              <path d="M178 172 L170 214 L168 250"/>
+              <path d="M178 172 L196 214 L200 250"/>
+              <path d="M202 146 L186 182 L172 212"/>
+              <path d="M202 146 L208 184 L198 212"/>
+            </g>
+            <circle cx="216" cy="122" r="15" fill="#76839C"/>
+            <g fill="#8FA6C8">
+              <ellipse cx="241" cy="116" rx="3" ry="5"/>
+              <ellipse cx="250" cy="133" rx="2.4" ry="4"/>
+            </g>
+            <rect x="330" y="118" width="20" height="112" rx="10" fill="none" stroke="rgba(255,255,255,.24)" stroke-width="3"/>
+            <rect x="335" y="204" width="10" height="21" rx="5" fill="#E31C2E"/>
+            <text x="340" y="248" fill="rgba(255,255,255,.4)" font-size="12" text-anchor="middle" font-family="Anton">FUEL</text>
+          </svg>
+        </div>
+        <figcaption>
+          <p class="toon-line">“7회. 갑자기 <span class="accent">팔이 무거워졌다.</span>”</p>
+          <p class="toon-sub">잘 던지던 선수가 후반에 흔들립니다. 야구도, 마라톤도, 축구도 똑같습니다.</p>
+        </figcaption>
+      </figure>
+
+      <!-- 2컷 -->
+      <figure class="toon-panel reveal">
+        <span class="toon-no">02</span>
+        <div class="toon-art">
+          <svg viewBox="0 0 400 300" role="img" aria-label="거의 비어버린 연료 게이지와 아래를 가리키는 화살표, 60에서 90분이라는 표시">
+            <rect width="400" height="300" fill="url(#tnBg)"/>
+            <rect x="112" y="104" width="152" height="74" rx="15" fill="none" stroke="#8FA6C8" stroke-width="7"/>
+            <rect x="266" y="126" width="14" height="30" rx="5" fill="#8FA6C8"/>
+            <rect x="124" y="116" width="20" height="50" rx="6" fill="#E31C2E"/>
+            <g stroke="#E31C2E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none">
+              <path d="M324 102 L324 172"/>
+              <path d="M310 156 L324 174 L338 156"/>
+            </g>
+            <text x="188" y="216" fill="#9CC2FF" font-size="30" text-anchor="middle" font-family="Anton">60-90 MIN</text>
+            <text x="188" y="244" fill="rgba(255,255,255,.52)" font-size="14" text-anchor="middle" font-family="Pretendard" font-weight="700">저장된 글리코겐이 바닥나는 시간</text>
+          </svg>
+        </div>
+        <figcaption>
+          <p class="toon-line">“실력이 아니라, <span class="accent-b">연료였다.</span>”</p>
+          <p class="toon-sub">정신력의 문제가 아닙니다. 몸에 저장된 연료는 60~90분이면 급격히 줄어듭니다.</p>
+        </figcaption>
+      </figure>
+
+      <!-- 3컷 -->
+      <figure class="toon-panel reveal">
+        <span class="toon-no">03</span>
+        <div class="toon-art">
+          <svg viewBox="0 0 400 300" role="img" aria-label="빛을 뿜는 아미노 K 퍼포먼스젤 한 포와 15분 전 표시">
+            <rect width="400" height="300" fill="url(#tnBg)"/>
+            <g class="toon-rays" stroke="rgba(62,139,255,.32)" stroke-width="3" stroke-linecap="round">
+              <path d="M200 40 L200 12"/><path d="M280 62 L296 38"/><path d="M310 150 L340 150"/>
+              <path d="M280 238 L296 262"/><path d="M200 260 L200 288"/><path d="M120 238 L104 262"/>
+              <path d="M90 150 L60 150"/><path d="M120 62 L104 38"/>
+              <path d="M252 52 L264 26"/><path d="M148 52 L136 26"/>
+              <path d="M252 248 L264 274"/><path d="M148 248 L136 274"/>
+            </g>
+            <circle cx="200" cy="150" r="78" fill="url(#tnProdGlow)"/>
+            <image href="assets/img/product.png" x="161" y="66" width="78" height="149"/>
+            <rect x="146" y="232" width="108" height="34" rx="17" fill="rgba(227,28,46,.16)" stroke="rgba(227,28,46,.5)" stroke-width="2"/>
+            <text x="200" y="255" fill="#fff" font-size="18" text-anchor="middle" font-family="Anton">-15 MIN</text>
+          </svg>
+        </div>
+        <figcaption>
+          <p class="toon-line">“경기 15분 전, <span class="accent">한 포.</span>”</p>
+          <p class="toon-sub">포도당이 먼저 불을 붙이고, 팔라티노스가 그 힘을 끝까지 밀어 올립니다.</p>
+        </figcaption>
+      </figure>
+
+      <!-- 4컷 -->
+      <figure class="toon-panel reveal">
+        <span class="toon-no">04</span>
+        <div class="toon-art">
+          <svg viewBox="0 0 400 300" role="img" aria-label="붉고 푸른 에너지 궤적을 남기며 끝까지 힘차게 달려 나가는 선수">
+            <rect width="400" height="300" fill="url(#tnBg)"/>
+            <line x1="0" y1="252" x2="400" y2="252" stroke="rgba(255,255,255,.16)" stroke-width="2"/>
+            <g fill="none" stroke-linecap="round">
+              <path d="M18 148 C78 136 118 150 158 140" stroke="#E31C2E" stroke-width="6" opacity=".85"/>
+              <path d="M8 180 C68 170 108 182 148 172"  stroke="#3E8BFF" stroke-width="5" opacity=".7"/>
+              <path d="M32 118 C84 110 118 120 150 114"  stroke="#3E8BFF" stroke-width="4" opacity=".45"/>
+              <path d="M26 212 C80 204 116 214 152 206"  stroke="#E31C2E" stroke-width="4" opacity=".45"/>
+            </g>
+            <g stroke="#fff" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#tnGlow)">
+              <path d="M196 118 L186 162"/>
+              <path d="M186 162 L216 196 L230 250"/>
+              <path d="M186 162 L156 184 L164 150"/>
+              <path d="M193 128 L222 138 L232 114"/>
+              <path d="M193 128 L165 136 L154 110"/>
+            </g>
+            <circle cx="203" cy="102" r="15" fill="#fff"/>
+            <text x="374" y="58" fill="rgba(255,255,255,.5)" font-size="20" text-anchor="end" font-family="Anton">FINISH</text>
+            <g stroke="rgba(255,255,255,.28)" stroke-width="3" stroke-linecap="round">
+              <path d="M330 90 L330 250"/>
+            </g>
+          </svg>
+        </div>
+        <figcaption>
+          <p class="toon-line">“마지막 이닝까지, <span class="accent-b">내 힘으로.</span>”</p>
+          <p class="toon-sub">무카페인 · 도핑프리. 유소년부터 엘리트까지, 훈련한 만큼 끝까지 쓰기 위해서.</p>
+        </figcaption>
+      </figure>
+
+    </div>
+
+    <p class="toon-end reveal">훈련은 이미 충분히 했습니다.<br>남은 건 <span class="accent">끝까지 버틸 연료</span>뿐입니다.</p>
+    <p class="toon-endsub reveal">* 섭취 타이밍과 양은 종목·체중·운동 강도에 따라 달라질 수 있습니다.</p>
+  </div>
+</section>
+
 <!-- ============ FOUNDERS / CEO ============ -->
 <section class="light section-pad" id="founders">
   <div class="wrap">
