@@ -139,6 +139,84 @@
   </div>
 </section>
 
+<!-- ============ ENERGY SURGE (힘이 솟아오르는 모션 그래프) ============ -->
+<section class="surge section-pad" id="surge">
+  <div class="surge-bg" aria-hidden="true"></div>
+  <div class="surge-particles" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="wrap">
+    <div class="surge-grid">
+      <div class="surge-copy">
+        <p class="label reveal">ENERGY SURGE</p>
+        <h2 class="h-lg mask" style="color:#fff;">
+          <span class="ln"><i>한 포, 그리고</i></span>
+          <span class="ln"><i>다시 <em>차오르는 힘.</em></i></span>
+        </h2>
+        <p class="lead reveal reveal-delay-2">떨어지던 곡선은 되돌릴 수 있습니다. 즉각 흡수되는 포도당이 먼저 불을 붙이고, 팔라티노스가 그 힘을 끝까지 밀어 올립니다.</p>
+        <div class="power reveal reveal-delay-3">
+          <div class="power-num"><span data-count="100">0</span><i>%</i></div>
+          <div class="power-lab">Power<br>Restored</div>
+        </div>
+      </div>
+
+      <div class="surge-chart reveal reveal-right" id="surgeChart">
+        <svg viewBox="0 0 880 420" xmlns="http://www.w3.org/2000/svg" role="img"
+             aria-label="섭취 전에는 완만히 떨어지던 에너지 곡선이, AMINO K 한 포 섭취 시점을 기준으로 가파르게 상승해 끝까지 높은 수준을 유지하는 그래프">
+          <defs>
+            <linearGradient id="sgGrad" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0%"   stop-color="#E31C2E"/>
+              <stop offset="45%"  stop-color="#FF6A3D"/>
+              <stop offset="100%" stop-color="#3E8BFF"/>
+            </linearGradient>
+            <linearGradient id="sgFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%"   stop-color="#3E8BFF" stop-opacity=".34"/>
+              <stop offset="100%" stop-color="#3E8BFF" stop-opacity="0"/>
+            </linearGradient>
+            <filter id="sgGlow" x="-60%" y="-60%" width="220%" height="220%">
+              <feGaussianBlur stdDeviation="9" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+
+          <g class="sg-grid">
+            <line x1="30" y1="90"  x2="850" y2="90"/>
+            <line x1="30" y1="180" x2="850" y2="180"/>
+            <line x1="30" y1="270" x2="850" y2="270"/>
+            <line x1="30" y1="360" x2="850" y2="360"/>
+          </g>
+
+          <!-- 섭취 전: 완만히 하강 -->
+          <path class="sg-before" d="M40,150 C120,176 210,222 302,268"/>
+
+          <!-- 섭취 후: 급상승 -->
+          <path class="sg-area" d="M302,268 C352,262 388,232 424,184 C458,138 486,92 528,66 C580,34 668,22 846,18 L846,360 L302,360 Z"/>
+          <path class="sg-line" d="M302,268 C352,262 388,232 424,184 C458,138 486,92 528,66 C580,34 668,22 846,18"/>
+
+          <!-- 섭취 시점 마커 -->
+          <line class="sg-tick" x1="302" y1="268" x2="302" y2="368"/>
+          <circle class="sg-ring"    cx="302" cy="268" r="11"/>
+          <circle class="sg-ring r2" cx="302" cy="268" r="11"/>
+          <circle class="sg-mark-dot" cx="302" cy="268" r="8"/>
+
+          <!-- 상승 화살표 -->
+          <g class="sg-arrow">
+            <path d="M846,18 l-13,26 l26,0 z" fill="#3E8BFF" transform="rotate(28 846 18)"/>
+          </g>
+
+          <g class="sg-label">
+            <text class="sg-txt dim" x="46"  y="128">섭취 전 · 하강</text>
+            <text class="sg-txt hot" x="302" y="396" text-anchor="middle">AMINO K 1포</text>
+            <text class="sg-txt blue" x="846" y="60" text-anchor="end">끝까지 유지</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ ABOUT ============ -->
 <section class="light section-pad" id="about">
   <div class="wrap">
