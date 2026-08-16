@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LK SQUARE — 끝까지 가는 힘</title>
+<meta name="description" content="LK Square. 과학적으로 설계된 스포츠 뉴트리션. 무카페인·도핑프리 퍼포먼스 젤 AMINO K.">
+<meta name="theme-color" content="#0A0F1C">
+<link rel="canonical" href="https://lk-square.com/">
+
+<!-- Open Graph / 카카오톡·페이스북 공유 미리보기 -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LK SQUARE">
+<meta property="og:title" content="LK SQUARE — 끝까지 가는 힘">
+<meta property="og:description" content="쌍둥이 야구선수를 둔 아빠가 부모의 마음으로 만든 퍼포먼스 젤, AMINO K.">
+<meta property="og:url" content="https://lk-square.com/">
+<meta property="og:image" content="https://lk-square.com/assets/img/product-gel.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LK SQUARE — 끝까지 가는 힘">
+<meta name="twitter:description" content="쌍둥이 야구선수를 둔 아빠가 부모의 마음으로 만든 퍼포먼스 젤, AMINO K.">
+<meta name="twitter:image" content="https://lk-square.com/assets/img/product-gel.png">
+
+<link rel="icon" href="assets/img/amino-k-mark.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/amino-k-mark.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin
+  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+
+<link rel="preload" as="image" href="assets/img/hero.jpg">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<noscript><style>
+  .loader{ display:none !important; }
+  .reveal, .mask .ln > i, .hero .eyebrow, .hero p.sub, .hero-cta, .scroll-cue, .hero-product .fly{
+    opacity:1 !important; transform:none !important; filter:none !important;
+  }
+</style></noscript>
+</head>
+<body>
+
+<!-- 인트로 로더 -->
+<div class="loader" id="loader">
+  <div>
+    <div class="loader-logo">LK<span>·</span>SQUARE</div>
+    <div class="loader-bar"><i id="loaderFill"></i></div>
+  </div>
+</div>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="nav" id="siteNav">
+  <a href="#top" class="logo">LK<span class="dot">·</span>SQUARE</a>
+  <nav class="nav-links" aria-label="주요 메뉴">
+    <a href="#about">회사소개</a>
+    <a href="#story">브랜드 스토리</a>
+    <a href="#product">제품</a>
+    <a href="#guide">섭취 가이드</a>
+  </nav>
+  <div style="display:flex; align-items:center;">
+    <a href="https://smartstore.naver.com/lksquare/products/13694328785" target="_blank" rel="noopener noreferrer" class="nav-cta" style="margin-right:14px;">구매</a>
+    <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" id="mobileMenuClose" aria-label="메뉴 닫기">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <a href="#about">회사소개</a>
+  <a href="#story">브랜드 스토리</a>
+  <a href="#product">제품</a>
+  <a href="#guide">섭취 가이드</a>
+  <a href="https://smartstore.naver.com/lksquare/products/13694328785" target="_blank" rel="noopener noreferrer" class="nav-cta">구매</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true"></div>
+
+  <!-- 제품: 좌측 화면 밖에서 회전하며 날아 들어옵니다 -->
+  <div class="hero-product" aria-hidden="true">
+    <div class="par" id="heroPar">
+      <div class="fly">
+        <div class="floaty">
+          <img src="assets/img/product-gel.png" alt="" width="440" height="620">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-inner wrap">
+    <p class="eyebrow">LK SQUARE — SPORTS NUTRITION</p>
+    <h1 class="mask in">
+      <span class="ln"><i>버틸 수 있는 힘,</i></span>
+      <span class="ln"><i>끝까지 가는 <em>에너지.</em></i></span>
+    </h1>
+    <p class="sub">LK Square의 첫 번째 제품, AMINO K.<br>트리플 에너지 시스템으로 설계된 퍼포먼스 젤.</p>
+    <div class="hero-cta">
+      <a href="#story" class="btn btn-ghost">브랜드 스토리</a>
+      <a href="https://smartstore.naver.com/lksquare/products/13694328785" target="_blank" rel="noopener noreferrer" class="btn btn-primary">구매</a>
+    </div>
+  </div>
+
+  <div class="scroll-cue"><span class="line"></span>SCROLL</div>
+</section>
+
+<!-- ============ 마퀴 밴드 ============ -->
+<div class="marquee red" aria-hidden="true">
+  <div class="marquee-track">
+    <span>AMINO K</span><span>TRIPLE ENERGY SYSTEM</span><span>CAFFEINE FREE</span><span>DOPING FREE</span><span>PALATINOSE 2,500mg</span><span>FOR EVERY LAST INNING</span>
+    <span>AMINO K</span><span>TRIPLE ENERGY SYSTEM</span><span>CAFFEINE FREE</span><span>DOPING FREE</span><span>PALATINOSE 2,500mg</span><span>FOR EVERY LAST INNING</span>
+  </div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section class="light section-pad" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-copy">
+        <p class="label reveal">ABOUT LK SQUARE</p>
+        <h2 class="h-lg mask">
+          <span class="ln"><i>모든 선수가</i></span>
+          <span class="ln"><i>한계를 넘어서도록.</i></span>
+        </h2>
+        <p class="reveal reveal-delay-2"><strong style="color:var(--ink);">Mission.</strong> 스포츠 현장에 대한 깊은 이해와 과학적 뉴트리션을 통해, 모든 선수가 한계를 넘어 자신만의 최상의 퍼포먼스를 발휘하도록 돕습니다.</p>
+        <p class="reveal reveal-delay-3" style="margin-top:14px;"><strong style="color:var(--ink);">Vision.</strong> 현장 중심의 스포츠 과학 솔루션을 기반으로, 선수의 삶과 스포츠 문화를 바꾸는 No.1 퍼포먼스 뉴트리션 리더.</p>
+      </div>
+      <div class="pillars" data-stagger="0.1">
+        <div class="pillar reveal reveal-right">
+          <div class="num">01</div>
+          <div class="name">Field-First Mindset</div>
+          <div class="desc">연구실에 머무르지 않고, 생활체육부터<br>엘리트까지 모든 현장 선수의 고충과 니즈를<br>최우선으로 반영합니다</div>
+        </div>
+        <div class="pillar reveal reveal-right">
+          <div class="num">02</div>
+          <div class="name">Evidence-Based Formula</div>
+          <div class="desc">전문 연구진과의 협업으로 스포츠 생리학·<br>영양학적 근거에 기반한 정교한<br>포뮬러만 설계합니다</div>
+        </div>
+        <div class="pillar reveal reveal-right">
+          <div class="num">03</div>
+          <div class="name">Uncompromising Safety</div>
+          <div class="desc">무카페인·도핑프리 원칙으로 유소년부터 엘리트까지<br>안심하고 섭취할 수 있는<br>정직한 제품을 만듭니다</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BRAND STORY ============ -->
+<section class="dark section-pad story" id="story">
+  <div class="story-watermark" data-parallax="0.14" aria-hidden="true">FOR MY SONS</div>
+  <div class="wrap">
+    <p class="label reveal">BRAND STORY</p>
+    <h2 class="story-quote mask">
+      <span class="ln"><i>아이의 마지막 이닝을 지켜보는 마음으로,</i></span>
+      <span class="ln"><i class="accent">성분표의 마지막 줄까지 따졌습니다.</i></span>
+    </h2>
+
+    <div class="story-body">
+      <div class="story-col" data-stagger="0.1">
+        <p class="reveal">시작은 브랜드가 아니라, 한 아버지의 걱정이었습니다. 쌍둥이 두 아들이 야구를 시작했고, 저는 주말마다 그라운드 뒤편에서 아이들의 경기를 지켜봤습니다. 잘 던지고 잘 치던 아이들이 후반 이닝에 접어들면 눈에 띄게 흔들렸습니다. 실력이 부족해서가 아니었습니다. 연료가 먼저 바닥났을 뿐이었습니다.</p>
+        <p class="reveal">그날부터 아이들에게 먹일 것을 찾아다녔습니다. 그런데 손에 잡히는 제품마다 카페인이 들어 있거나, 함량이 적혀 있지 않거나, 무엇이 들었는지 끝까지 확인할 방법이 없었습니다. 성인 선수를 기준으로 만든 제품을, 이제 막 성장기에 들어선 내 아이에게 그대로 건넬 수는 없었습니다.</p>
+      </div>
+      <div class="story-col" data-stagger="0.1">
+        <p class="reveal">그래서 기준을 딱 하나로 정했습니다. <strong>&ldquo;내 아들 가방에 넣어 보낼 수 없는 것은, 다른 집 아이에게도 권하지 않는다.&rdquo;</strong> 성분을 하나 넣고 뺄 때마다 이 질문을 반복했고, 스포츠 영양학 연구진과 아미노산 전문가가 그 질문에 과학으로 답했습니다.</p>
+        <p class="reveal">무카페인, 도핑프리, 그리고 전 성분 함량 공개. 화려한 문구를 덜어내는 대신 뒷면에 적힌 숫자로 증명하기로 했습니다. 부모의 눈으로 검증하고 전문가의 손으로 설계한 한 포, 그것이 AMINO K입니다.</p>
+      </div>
+    </div>
+
+    <p class="story-pull reveal reveal-left">AMINO K는 마케팅으로 만든 제품이 아니라,<br>부모의 마음으로 만든 제품입니다.</p>
+
+    <div class="story-sign reveal">
+      <span class="sign-line"></span>
+      <div>
+        <div class="sign-name">쌍둥이 야구선수의 아빠 · LK SQUARE 대표 김민</div>
+        <div class="sign-role">Founder · 체육학박사</div>
+      </div>
+    </div>
+
+    <p class="story-tag reveal">LK SQUARE — FOR EVERY ATHLETE'S LAST INNING</p>
+  </div>
+</section>
+
+<!-- ============ FOUNDERS / CEO ============ -->
+<section class="light section-pad" id="founders">
+  <div class="wrap">
+    <p class="label reveal">FOUNDING TEAM</p>
+    <h2 class="h-lg mask">
+      <span class="ln"><i>스포츠 영양학 박사와</i></span>
+      <span class="ln"><i>아미노산 전문가가 함께 만들었습니다.</i></span>
+    </h2>
+    <p class="muted reveal reveal-delay-2" style="margin-top:22px;font-size:16px;line-height:1.85;max-width:620px;">스포츠 현장에서 경험한 선수들의 니즈와 과학적 근거, 아미노산 기술력을 바탕으로 AMINO K를 디자인했습니다.</p>
+
+    <div class="ceo-quote reveal reveal-blur" style="margin-top:72px;">
+      <div class="quote-mark">&ldquo;</div>
+      <p class="quote-text">스포츠 현장과 선수의 삶을 연구해 온 체육학박사로서,<br>최상의 퍼포먼스를 위한 가장 정직한 답을 건넵니다.</p>
+      <div class="quote-body">
+        <p>오랫동안 스포츠 현장을 탐구하며 수많은 선수들의 삶과 환경을 가까이서 연구해 왔습니다. 승리의 환호 뒤에 숨겨진 피나는 노력, 그리고 경기 후반 결정적인 순간에 찾아오는 체력적 한계와 좌절을 현장에서 수없이 목격했습니다.</p>
+        <p>&ldquo;선수들이 훈련한 만큼, 자신의 역량을 100% 발휘할 수 있는 환경은 어떻게 만들어지는가?&rdquo; &ldquo;왜 수많은 선수들이 경기 후반 10분의 고비를 넘지 못하고 무너지는가?&rdquo; 그 답은 개인의 정신력이나 의지가 아니라, 선수를 둘러싼 스포츠 생태계와 과학적인 영양 지원 시스템이 결합될 때 완성된다는 것을 깨달았습니다.</p>
+        <p>이에 스포츠 영양학·생리학 분야 최고의 연구진과 함께 현장의 요구를 정밀하게 분석해 AMINO K Performance를 탄생시켰습니다. 저희는 현장의 목소리와 선수의 마음을 누구보다 잘 이해하는 스포츠 전문가 그룹입니다. 선수 한 사람 한 사람의 땀방울이 온전한 결실로 이어지도록, 가장 안심할 수 있고 진정성 있는 솔루션만을 제공하겠습니다.</p>
+      </div>
+      <div class="quote-attr">대표이사 · 체육학박사 김민</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUCT ============ -->
+<section class="dark section-pad" id="product" style="background:var(--navy-2); border-top:1px solid var(--line-on-dark);">
+  <div class="wrap">
+    <p class="label reveal">FIRST LAUNCH</p>
+    <div class="product-hero">
+      <div class="product-visual reveal reveal-zoom">
+        <img id="productImg" src="assets/img/product-gel.png" alt="AMINO K 퍼포먼스 젤 — Triple Energy System" loading="lazy" width="440" height="620">
+      </div>
+      <div class="product-copy">
+        <img src="assets/img/amino-k-mark.png" alt="AMINO K" class="brand-mark reveal reveal-left" loading="lazy" width="200" height="46">
+        <div class="tagline reveal reveal-delay-1">PERFORMANCE GEL — Triple Energy System</div>
+        <p class="desc reveal reveal-delay-2">하나의 젤에 세 가지 힘을 담았습니다. 빠르고 오래가는 에너지 공급, 에너지 효율의 극대화, 그리고 빠른 회복까지. 트리플 에너지 시스템, AMINO K의 핵심입니다.</p>
+
+        <div class="triple" data-stagger="0.08">
+          <div class="cell reveal">
+            <div class="tnum">01 · ENERGY</div>
+            <div class="ttitle">빠르고 지속되는<br>에너지 공급</div>
+            <div class="tdesc">팔라티노스 기반 설계로 혈당 급변 없이 오래갑니다</div>
+          </div>
+          <div class="cell reveal">
+            <div class="tnum">02 · EFFICIENCY</div>
+            <div class="ttitle">에너지 효율<br>극대화</div>
+            <div class="tdesc">비타민B군·라이신·아르기닌이 대사 효율을 끌어올립니다</div>
+          </div>
+          <div class="cell reveal">
+            <div class="tnum">03 · RECOVERY</div>
+            <div class="ttitle">빠른<br>회복</div>
+            <div class="tdesc">아미노산이 근손실을 줄이고 회복을 앞당깁니다</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee dark-band reverse" aria-hidden="true">
+  <div class="marquee-track">
+    <span>WHAT'S INSIDE</span><span>PALATINOSE</span><span>BCAA</span><span>ARGININE</span><span>LYSINE</span><span>VITAMIN B</span><span>ELECTROLYTE</span>
+    <span>WHAT'S INSIDE</span><span>PALATINOSE</span><span>BCAA</span><span>ARGININE</span><span>LYSINE</span><span>VITAMIN B</span><span>ELECTROLYTE</span>
+  </div>
+</div>
+
+<!-- ============ INGREDIENTS ============ -->
+<section class="light section-pad" id="inside" style="padding-top: clamp(70px,9vw,110px); padding-bottom: clamp(70px,9vw,110px);">
+  <div class="wrap">
+    <p class="label reveal">WHAT'S INSIDE</p>
+    <h2 class="h-lg mask">
+      <span class="ln"><i>한 포에 담긴</i></span>
+      <span class="ln"><i>4가지 설계.</i></span>
+    </h2>
+  </div>
+  <div class="wrap" style="margin-top:56px;">
+    <div class="ing-grid" data-stagger="0.09">
+      <div class="ing-cell reveal">
+        <div class="amt"><span data-count="2500">0</span><span class="unit">mg</span></div>
+        <div class="name">팔라티노스</div>
+        <div class="desc">혈당 급변 없이 지속되는 에너지</div>
+      </div>
+      <div class="ing-cell reveal">
+        <div class="amt"><span data-count="65">0</span><span class="unit">mg</span></div>
+        <div class="name">나트륨</div>
+        <div class="desc">장시간 운동 시 전해질 균형 유지</div>
+      </div>
+      <div class="ing-cell reveal">
+        <div class="amt"><span data-count="300">0</span><span class="unit">mg</span></div>
+        <div class="name">BCAA</div>
+        <div class="desc">근육 단백질 합성과 회복 지원</div>
+      </div>
+      <div class="ing-cell reveal">
+        <div class="amt"><span data-count="1190">0</span><span class="unit">mg</span></div>
+        <div class="name">아미노산</div>
+        <div class="desc">빠른 회복과 지구력 유지</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENERGY CURVE ============ -->
+<section class="dark section-pad">
+  <div class="wrap">
+    <div class="curve-wrap">
+      <div class="curve-copy">
+        <p class="label reveal">DUAL ENERGY CURVE</p>
+        <h2 class="h-lg mask" style="color:#fff;">
+          <span class="ln"><i>즉각의 힘과</i></span>
+          <span class="ln"><i>끝까지의 힘.</i></span>
+        </h2>
+        <p class="reveal reveal-delay-2">몸은 탄수화물로 달립니다. 저장된 글리코겐은 60~90분이면 급격히 줄어들고, 연료가 비면 페이스가 무너집니다. AMINO K는 즉각적인 에너지와 천천히 분해되는 에너지를 함께 설계해, 처음의 힘과 끝까지의 유지력을 동시에 잡았습니다.</p>
+        <div class="curve-legend reveal reveal-delay-3">
+          <div class="legend-item"><span class="legend-dot pulse" style="background:var(--red);"></span>즉각 에너지</div>
+          <div class="legend-item"><span class="legend-dot pulse" style="background:#5C8DF6;"></span>지속 에너지 · 팔라티노스</div>
+        </div>
+      </div>
+      <div class="curve-svg-box reveal reveal-right" id="curveBox">
+        <svg viewBox="0 0 560 320" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="즉각 에너지와 지속 에너지의 시간별 곡선 비교">
+          <line x1="30" y1="270" x2="540" y2="270" stroke="rgba(255,255,255,.16)" stroke-width="1"/>
+          <line x1="30" y1="30" x2="30" y2="270" stroke="rgba(255,255,255,.16)" stroke-width="1"/>
+          <path id="curveP1" class="curve-path p1" d="M30,240 C90,60 140,50 190,110 C240,170 260,230 300,250 C360,270 420,265 540,262"
+                fill="none" stroke="var(--red)" stroke-width="3.5" stroke-linecap="round"/>
+          <path id="curveP2" class="curve-path p2" d="M30,255 C110,232 190,175 260,120 C300,92 330,88 360,98 C420,118 480,132 540,148"
+                fill="none" stroke="#5C8DF6" stroke-width="3.5" stroke-linecap="round"/>
+          <circle class="curve-rider" r="5.5" fill="var(--red)">
+            <animateMotion dur="4s" begin="indefinite" repeatCount="indefinite"><mpath href="#curveP1"/></animateMotion>
+          </circle>
+          <circle class="curve-rider" r="5.5" fill="#5C8DF6">
+            <animateMotion dur="4s" begin="indefinite" repeatCount="indefinite"><mpath href="#curveP2"/></animateMotion>
+          </circle>
+          <text x="30" y="292" fill="rgba(255,255,255,.45)" font-size="11" font-family="Pretendard">START</text>
+          <text x="497" y="292" fill="rgba(255,255,255,.45)" font-size="11" font-family="Pretendard">FINISH</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPORT GUIDE ============ -->
+<section class="light section-pad" id="guide">
+  <div class="wrap">
+    <p class="label reveal">SPORT GUIDE</p>
+    <h2 class="h-lg mask">
+      <span class="ln"><i>종목별 섭취 타이밍은</i></span>
+      <span class="ln"><i>곧 기록입니다.</i></span>
+    </h2>
+    <div class="sport-row" data-stagger="0.07">
+      <div class="sport-card reveal">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M6.5 6.5c2.2 2.2 2.2 8.8 0 11M17.5 6.5c-2.2 2.2-2.2 8.8 0 11"/></svg>
+        <div class="sname">야구</div>
+        <div class="stiming">시작 15분 전 + 클리닝타임</div>
+        <div class="sdose">경기당 1~2포</div>
+        <div class="sbenefit">장시간 경기 중 순간 집중력 유지</div>
+      </div>
+      <div class="sport-card reveal">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <div class="sname">러닝 · 마라톤</div>
+        <div class="stiming">출발 15분 전 + 매 10km</div>
+        <div class="sdose">레이스 전 1포 / 중 1~2포</div>
+        <div class="sbenefit">지속형 팔라티노스로 봉크 방지</div>
+      </div>
+      <div class="sport-card reveal">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.2l3 2.2-1.1 3.6h-3.8l-1.1-3.6z"/><path d="M12 3v4.2M12 20.8V17M4.3 8.6l3.4 1.4M19.7 8.6l-3.4 1.4M6 17.5l2.4-3.3M18 17.5l-2.4-3.3"/></svg>
+        <div class="sname">축구 · 풋살</div>
+        <div class="stiming">시작 15분 전 + 하프타임</div>
+        <div class="sdose">총 2포 (회당 1포)</div>
+        <div class="sbenefit">전후반 출력 유지와 경련 방지</div>
+      </div>
+      <div class="sport-card reveal">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M15 6l-4 6h6l-3 5.5M5.5 17.5L9 8.5h4"/></svg>
+        <div class="sname">사이클 · 라이딩</div>
+        <div class="stiming">시작 15분 전 + 30분마다</div>
+        <div class="sdose">주행 중 정기적 1포씩</div>
+        <div class="sbenefit">듀얼 연소로 페달링 화력 유지</div>
+      </div>
+      <div class="sport-card reveal">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 15.5c2 1.2 4 1.2 6 0s4-1.2 6 0 4 1.2 6 0M2 19.5c2 1.2 4 1.2 6 0s4-1.2 6 0 4 1.2 6 0"/><circle cx="8" cy="6" r="1.6" fill="currentColor" stroke="none"/><path d="M4 11l4-2.2 3.5 2 3-2.4 3.5 2.2"/></svg>
+        <div class="sname">수영</div>
+        <div class="stiming">훈련 15분 전 + 인터벌 휴식</div>
+        <div class="sdose">훈련 전후 각 1포</div>
+        <div class="sbenefit">자각 어려운 수분·전해질 손실 방지</div>
+      </div>
+      <div class="sport-card reveal">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 3v18"/><path d="M6 3l10 4-10 4"/><ellipse cx="12" cy="21" rx="7" ry="1.4"/></svg>
+        <div class="sname">골프</div>
+        <div class="stiming">라운드 15분 전 + 6·12번홀</div>
+        <div class="sdose">경기 중 1~3포</div>
+        <div class="sbenefit">후반 집중력 흐트러짐 방지</div>
+      </div>
+      <div class="sport-card reveal">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 12h2M18 12h2M6 12v-2h2v4H6zM16 12v-2h2v4h-2zM8 12h8"/></svg>
+        <div class="sname">크로스핏 · 웨이트</div>
+        <div class="stiming">WOD · 본 운동 15분 전</div>
+        <div class="sdose">1회 1포</div>
+        <div class="sbenefit">고중량 반복 출력 및 근손실 방어</div>
+      </div>
+    </div>
+    <p class="reveal reveal-delay-4" style="margin-top:28px; font-size:12.5px; color:var(--muted);">* 표준 운동 환경 및 체중 기준 가이드입니다. 체력과 운동 강도, 날씨에 따른 땀 배출량에 맞춰 유연하게 조절하세요.</p>
+  </div>
+</section>
+
+<!-- ============ CTA / LAUNCH ============ -->
+<section class="cta-section section-pad" id="launch">
+  <div class="wrap">
+    <p class="label reveal">OFFICIAL LAUNCH</p>
+    <img src="assets/img/amino-k-mark.png" alt="AMINO K" class="brand-mark reveal reveal-zoom" loading="lazy" style="height:56px; margin:0 auto;" width="244" height="56">
+    <h2 class="reveal reveal-delay-1" style="margin-top:26px;">지금 만나보세요.</h2>
+    <p class="sub reveal reveal-delay-2">LK Square의 첫 번째 제품을 스마트스토어에서 만나실 수 있습니다.</p>
+
+    <div class="countdown reveal reveal-delay-3" id="countdown">
+      <div class="cd-item"><div class="cd-num" id="cd-d">--</div><div class="cd-label">Days</div></div>
+      <div class="cd-item"><div class="cd-num" id="cd-h">--</div><div class="cd-label">Hours</div></div>
+      <div class="cd-item"><div class="cd-num" id="cd-m">--</div><div class="cd-label">Min</div></div>
+      <div class="cd-item"><div class="cd-num" id="cd-s">--</div><div class="cd-label">Sec</div></div>
+    </div>
+
+    <div class="launch-live" id="launchLive">
+      <span class="badge"><span class="live-dot"></span>NOW AVAILABLE — 판매중</span>
+    </div>
+
+    <div class="reveal reveal-delay-4">
+      <a href="https://smartstore.naver.com/lksquare/products/13694328785" target="_blank" rel="noopener noreferrer" id="smartstoreLink" class="btn btn-primary" style="padding:18px 44px; font-size:15px;">구매하기</a>
+    </div>
+    <p class="cta-note">스마트스토어 페이지로 새 창에서 연결됩니다</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-logo">LK SQUARE</div>
+      <div class="foot-links">
+        <a href="#about">회사소개</a>
+        <a href="#story">브랜드 스토리</a>
+        <a href="#product">제품</a>
+        <a href="#guide">섭취 가이드</a>
+        <a href="https://smartstore.naver.com/lksquare/products/13694328785" target="_blank" rel="noopener noreferrer">구매</a>
+      </div>
+    </div>
+    <div class="foot-info">
+      <span>주식회사 엘케이스퀘어</span>
+      <span>대표 김민</span>
+      <span>충북 충주시 금봉대로 350 2층 3호</span>
+      <span>고객센터 0502-1914-4874</span>
+    </div>
+    <!-- TODO(법적 필수 표기): 사업자등록번호 / 통신판매업 신고번호 / 개인정보처리방침 · 이용약관 링크를 여기에 추가해야 합니다. -->
+    <div class="foot-bottom">
+      <span>© 2026 LK Square Co., Ltd. All rights reserved.</span>
+      <span>lk-square.com</span>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "주식회사 엘케이스퀘어",
+  "alternateName": "LK SQUARE",
+  "url": "https://lk-square.com/",
+  "logo": "https://lk-square.com/assets/img/amino-k-mark.png",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "금봉대로 350 2층 3호",
+    "addressLocality": "충주시",
+    "addressRegion": "충청북도",
+    "addressCountry": "KR"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+82-502-1914-4874",
+    "contactType": "customer service",
+    "availableLanguage": "Korean"
+  }
+}
+</script>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
