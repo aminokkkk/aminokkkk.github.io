@@ -245,6 +245,136 @@
   </div>
 </section>
 
+<!-- ============ REAL REVIEW ============ -->
+<section class="reviews section-pad" id="reviews">
+  <!-- 종목 엠블럼 스프라이트 -->
+  <svg class="rv-sprite" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="rvRingGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%"   stop-color="#E31C2E"/>
+        <stop offset="55%"  stop-color="#FF6A3D"/>
+        <stop offset="100%" stop-color="#3E8BFF"/>
+      </linearGradient>
+    </defs>
+
+    <symbol id="gl-run" viewBox="0 0 24 24">
+      <circle cx="15.6" cy="4.3" r="2.2"/>
+      <path d="M13.9 8.3 10.1 10.5l1.2 3.6 2.9 1.1 1.1 5.5"/>
+      <path d="M14.2 15.2 10.7 17l-2.4 3.7"/>
+      <path d="M11.7 9.7 7.6 8.4"/>
+      <path d="M14.7 12.5l3.8 1.6 1.6-3.3"/>
+      <path d="M2.2 7.4h3.4M1.3 11.2h2.9M2.9 15h3.1"/>
+    </symbol>
+
+    <symbol id="gl-tennis" viewBox="0 0 24 24">
+      <ellipse cx="9.4" cy="8.6" rx="5.3" ry="6.4" transform="rotate(-38 9.4 8.6)"/>
+      <path d="M5.6 5.1 13 11.9M13 5.2 5.7 12"/>
+      <path d="M12.9 13.4 19.8 20.9"/>
+      <circle cx="19.2" cy="6.2" r="2.1"/>
+      <path d="M17.4 3.9c1.2 1.4 1.3 3.2.2 4.6"/>
+    </symbol>
+
+    <symbol id="gl-soccer" viewBox="0 0 24 24">
+      <circle cx="10.6" cy="11.2" r="7.4"/>
+      <path d="M10.6 6.9l3 2.2-1.15 3.55H8.75L7.6 9.1z"/>
+      <path d="M10.6 3.8v3.1M4.2 8.9l3.1 1M17 8.9l-3.1 1M6.5 17.3l1.9-2.7M14.7 17.3l-1.9-2.7"/>
+      <path d="M19.6 5.3c1.7 2.1 2.5 4.6 2.3 7.3"/>
+    </symbol>
+
+    <symbol id="gl-golf" viewBox="0 0 24 24">
+      <path d="M8.4 2.9 15.9 5.8"/>
+      <path d="M15.9 5.8 7.4 17.1"/>
+      <path d="M7.4 17.1c-1.2 1.5-.3 3.1 1.6 2.7l2.3-.5"/>
+      <circle cx="18.2" cy="18.4" r="2"/>
+      <path d="M13.6 21.3h8.2"/>
+    </symbol>
+
+    <symbol id="gl-bike" viewBox="0 0 24 24">
+      <circle cx="5.4" cy="16.9" r="3.5"/>
+      <circle cx="18.6" cy="16.9" r="3.5"/>
+      <path d="M5.4 16.9 9.9 8.7h5.2"/>
+      <path d="M9.9 8.7 12.6 16.9h6"/>
+      <path d="M14.3 8.7 16.4 5.9h2.4"/>
+      <circle cx="12.6" cy="16.9" r="1.1"/>
+    </symbol>
+  </svg>
+
+  <div class="wrap">
+    <div class="rv-head">
+      <span class="rv-pill reveal reveal-zoom">REVIEW</span>
+      <h2 class="rv-title reveal reveal-delay-1"><span class="b">AMINO</span> <span class="k">K</span> Real Review</h2>
+      <p class="rv-sub reveal reveal-delay-2">마라톤부터 사이클까지, 종목의 한계가 갈리는 지점에서<br>직접 써 본 선수들의 이야기입니다.</p>
+    </div>
+
+    <div class="rv-grid" data-stagger="0.08">
+      <article class="rv-card featured reveal">
+        <div class="rv-top">
+          <span class="rv-emblem">
+            <svg class="rv-ring" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="45"/></svg>
+            <svg class="rv-glyph" aria-hidden="true"><use href="#gl-run"></use></svg>
+          </span>
+          <span class="rv-tag">지구력 스포츠</span>
+        </div>
+        <p class="rv-quote">“30km 지점마다 찾아오던 봉크(Bonk) 현상이 사라졌습니다. 상쾌한 자몽맛이라 물 없이도 깔끔합니다.”</p>
+        <div class="rv-who"><span class="rv-name">김O진 선수</span><span class="rv-role">마라톤 풀코스 선수</span></div>
+      </article>
+
+      <article class="rv-card reveal">
+        <div class="rv-top">
+          <span class="rv-emblem">
+            <svg class="rv-ring" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="45"/></svg>
+            <svg class="rv-glyph" aria-hidden="true"><use href="#gl-tennis"></use></svg>
+          </span>
+          <span class="rv-tag">라켓 스포츠</span>
+        </div>
+        <p class="rv-quote">“3세트 코트 체인지 때 먹어주면 세트 후반부 풋워크 스피드와 선명한 집중력이 끝까지 유지됩니다.”</p>
+        <div class="rv-who"><span class="rv-name">이O우 선수</span><span class="rv-role">프로 테니스 선수</span></div>
+      </article>
+
+      <article class="rv-card reveal">
+        <div class="rv-top">
+          <span class="rv-emblem">
+            <svg class="rv-ring" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="45"/></svg>
+            <svg class="rv-glyph" aria-hidden="true"><use href="#gl-soccer"></use></svg>
+          </span>
+          <span class="rv-tag">고강도 팀 스포츠</span>
+        </div>
+        <p class="rv-quote">“하프타임에 1포 먹고 나면 후반전 종아리 쥐(경련) 걱정 없이 전력 질주할 수 있습니다.”</p>
+        <div class="rv-who"><span class="rv-name">박O현 선수</span><span class="rv-role">프로 축구 선수</span></div>
+      </article>
+
+      <article class="rv-card reveal">
+        <div class="rv-top">
+          <span class="rv-emblem">
+            <svg class="rv-ring" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="45"/></svg>
+            <svg class="rv-glyph" aria-hidden="true"><use href="#gl-golf"></use></svg>
+          </span>
+          <span class="rv-tag">장시간 인지 스포츠</span>
+        </div>
+        <p class="rv-quote">“9홀 종료 후 먹으면 속도 가볍고 후반 18홀까지 완벽한 코어 체력이 유지됩니다.”</p>
+        <div class="rv-who"><span class="rv-name">최O서 선수</span><span class="rv-role">프로 골퍼</span></div>
+      </article>
+
+      <article class="rv-card reveal">
+        <div class="rv-top">
+          <span class="rv-emblem">
+            <svg class="rv-ring" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="45"/></svg>
+            <svg class="rv-glyph" aria-hidden="true"><use href="#gl-bike"></use></svg>
+          </span>
+          <span class="rv-tag">장거리 인듀어런스</span>
+        </div>
+        <p class="rv-quote">“워터리 겔 제형이라 라이딩 중 짜 먹기 편하고, 자몽 산미가 장시간 페달링 피로를 깨워줍니다.”</p>
+        <div class="rv-who"><span class="rv-name">정O민 선수</span><span class="rv-role">로드 사이클 선수</span></div>
+      </article>
+    </div>
+
+    <div class="rv-verdict reveal reveal-zoom">
+      <p>스포츠 현장 시뮬레이션 선수 체감 테스트까지,<br>체육학 박사인 대표이사가 직접 검증한 단 하나의 겔</p>
+    </div>
+    <p class="rv-note reveal">* 실제 사용자 인터뷰에서 발췌한 내용이며, 주관적인 내용으로 개인차가 있을 수 있습니다.</p>
+  </div>
+</section>
+
 <!-- ============ ABOUT ============ -->
 <section class="light section-pad" id="about">
   <div class="wrap">
@@ -727,6 +857,7 @@
         <a href="#about">회사소개</a>
         <a href="#story">브랜드 스토리</a>
         <a href="#product">제품</a>
+        <a href="#reviews">리뷰</a>
         <a href="#guide">섭취 가이드</a>
         <a href="#facts">제품정보</a>
         <a href="https://smartstore.naver.com/lksquare/products/13694328785" target="_blank" rel="noopener noreferrer">구매</a>
