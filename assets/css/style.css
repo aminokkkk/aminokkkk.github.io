@@ -769,7 +769,116 @@ table.cmp .check{ color:#4ADE80; }
 }
 
 /* =========================================================
-   18. 모션 최소화 선호 사용자 대응
+   18. 신뢰 배지 (HACCP / 무카페인 / 도핑프리)
+   ========================================================= */
+.trust-row{
+  display:flex; align-items:center; justify-content:center; gap:clamp(14px,3vw,34px);
+  flex-wrap:wrap; margin-top:44px;
+}
+.trust-badge{
+  display:flex; align-items:center; gap:12px;
+  padding:13px 22px; border-radius:16px;
+  border:1px solid var(--line-on-light); background:#fff;
+  box-shadow:0 8px 22px rgba(14,16,21,.05);
+  transition:transform .35s var(--ease), box-shadow .35s ease;
+}
+.trust-badge:hover{ transform:translateY(-4px); box-shadow:0 16px 32px rgba(14,16,21,.10); }
+.trust-badge img{ width:54px; height:auto; flex:none; }
+.trust-badge .tb-mark{
+  width:44px; height:44px; flex:none; border-radius:50%;
+  display:grid; place-items:center;
+  border:2px solid var(--red); color:var(--red);
+  font-family:var(--display); font-size:15px; letter-spacing:.02em;
+}
+.trust-badge .tb-mark.blue{ border-color:var(--blue); color:var(--blue); }
+.trust-badge .tb-t{ font-size:14.5px; font-weight:800; letter-spacing:-.02em; color:var(--ink); }
+.trust-badge .tb-d{ margin-top:3px; font-size:11.5px; color:var(--muted); }
+
+/* =========================================================
+   19. POINT 03 — 제품 특성
+   ========================================================= */
+.feature{ background:var(--navy); color:#fff; text-align:center; }
+.feature .f-lead{ margin-top:22px; font-size:clamp(15px,1.9vw,19px); color:rgba(255,255,255,.8); font-weight:600; }
+.feat-list{ margin-top:70px; display:flex; flex-direction:column; gap:clamp(56px,7vw,92px); }
+.feat{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(28px,5vw,64px); align-items:center; text-align:left; }
+.feat:nth-child(even) .feat-media{ order:2; }
+.feat-media{ border-radius:20px; overflow:hidden; box-shadow:0 26px 60px rgba(0,0,0,.42); }
+.feat-media img{ width:100%; height:auto; display:block; transition:transform 1.1s var(--ease); }
+.feat:hover .feat-media img{ transform:scale(1.05); }
+.feat-num{ font-family:var(--display); font-size:13px; letter-spacing:.2em; color:var(--blue); }
+.feat h3{
+  margin-top:14px; font-family:var(--display-ko); font-weight:900;
+  font-size:clamp(24px,3.4vw,40px); line-height:1.22; letter-spacing:-.04em;
+}
+.feat h3 .accent{ color:var(--red); }
+.feat h3 .accent-b{ color:var(--blue); }
+.feat p{ margin-top:18px; font-size:15.5px; line-height:1.85; color:rgba(255,255,255,.66); }
+
+/* =========================================================
+   20. 영양정보 · 제품고시정보
+   ========================================================= */
+.facts{ background:var(--paper-2); }
+.facts-head{ text-align:center; }
+.facts-eyebrow{ font-size:12px; font-weight:800; letter-spacing:.2em; text-transform:uppercase; color:var(--red); }
+.facts h2{
+  margin-top:10px; font-family:var(--display-ko); font-weight:900;
+  font-size:clamp(26px,3.6vw,42px); letter-spacing:-.04em; color:var(--ink);
+}
+.facts-card{
+  margin-top:34px; background:#fff; border-radius:18px; overflow:hidden;
+  box-shadow:0 16px 40px rgba(14,16,21,.07);
+}
+
+/* 영양정보 */
+table.nutri{ width:100%; border-collapse:collapse; }
+table.nutri caption{
+  background:var(--navy); color:#fff; text-align:left;
+  padding:17px 24px; font-size:15px; font-weight:800; letter-spacing:-.01em;
+}
+table.nutri caption b{ float:right; color:#7FB2FF; font-weight:800; }
+table.nutri th, table.nutri td{ padding:14px 24px; font-size:14.5px; border-bottom:1px solid rgba(14,16,21,.07); }
+table.nutri th{ text-align:left; font-weight:600; color:var(--ink); }
+table.nutri th.sub{ padding-left:44px; font-weight:500; color:var(--muted); font-size:13.5px; }
+table.nutri td.val{ text-align:right; font-weight:800; color:var(--ink); white-space:nowrap; }
+table.nutri tr.sub td.val{ font-weight:600; color:var(--muted); }
+table.nutri td.pct{ text-align:right; width:82px; color:var(--muted-2); font-size:13px; white-space:nowrap; }
+table.nutri tbody tr:nth-child(even){ background:#FBFCFE; }
+table.nutri tbody tr:last-child th, table.nutri tbody tr:last-child td{ border-bottom:none; }
+.facts-note{ margin-top:14px; font-size:12px; color:var(--muted); line-height:1.7; }
+
+/* 제품고시정보 */
+table.notice{ width:100%; border-collapse:collapse; }
+table.notice th, table.notice td{
+  padding:16px 22px; font-size:14px; text-align:left; vertical-align:top;
+  border-bottom:1px solid rgba(14,16,21,.07); line-height:1.75;
+}
+table.notice th{
+  width:150px; background:#F7F8FB; font-weight:800; color:var(--ink);
+  font-size:13.5px; white-space:nowrap;
+}
+table.notice td{ color:var(--muted); }
+table.notice tr:last-child th, table.notice tr:last-child td{ border-bottom:none; }
+.facts-legal{
+  margin-top:16px; padding:14px 18px; border-radius:12px;
+  background:rgba(227,28,46,.06); border:1px solid rgba(227,28,46,.16);
+  font-size:12.5px; color:#8A3B44; line-height:1.7;
+}
+
+@media (max-width: 860px){
+  .feat{ grid-template-columns:1fr; gap:22px; }
+  .feat:nth-child(even) .feat-media{ order:0; }
+}
+@media (max-width: 560px){
+  table.nutri th, table.nutri td{ padding:12px 14px; font-size:13.5px; }
+  table.nutri th.sub{ padding-left:28px; }
+  table.notice th, table.notice td{ padding:13px 14px; font-size:13px; }
+  table.notice th{ width:96px; white-space:normal; }
+  table.nutri caption{ padding:15px 16px; font-size:13.5px; }
+  table.nutri caption b{ float:none; display:block; margin-top:5px; }
+}
+
+/* =========================================================
+   21. 모션 최소화 선호 사용자 대응
    ========================================================= */
 @media (prefers-reduced-motion: reduce){
   *, *::before, *::after{
