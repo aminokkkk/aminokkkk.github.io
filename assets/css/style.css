@@ -677,7 +677,7 @@ footer{ background:var(--navy); color:rgba(255,255,255,.55); border-top:1px soli
 /* =========================================================
    16. WHY AMINO K — 비교표 (상세페이지 POINT 01)
    ========================================================= */
-.compare{ background:var(--navy-2); border-top:1px solid var(--line-on-dark); text-align:center; }
+.compare{ background:var(--navy-2); color:#fff; border-top:1px solid var(--line-on-dark); text-align:center; }
 .point-pill{
   display:inline-flex; align-items:center; gap:9px;
   padding:10px 26px; border-radius:999px; background:var(--red); color:#fff;
@@ -692,6 +692,7 @@ footer{ background:var(--navy); color:rgba(255,255,255,.55); border-top:1px soli
 .compare h2{
   margin-top:12px; font-family:var(--display-ko); font-weight:900;
   font-size:clamp(28px,4.6vw,56px); letter-spacing:-.04em; line-height:1.14;
+  color:#fff;   /* 지정하지 않으면 body의 --ink(검정)를 상속해 네이비 배경에 묻힙니다 */
 }
 .compare h2 .k{ color:var(--red); }
 .cmp-sub{ margin-top:18px; font-size:14.5px; line-height:1.9; color:rgba(255,255,255,.62); }
