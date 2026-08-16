@@ -141,7 +141,23 @@
 
 <!-- ============ ENERGY SURGE (힘이 솟아오르는 모션 그래프) ============ -->
 <section class="surge section-pad" id="surge">
-  <div class="surge-bg" aria-hidden="true"></div>
+  <div class="surge-bg" aria-hidden="true">
+    <video class="surge-video" id="surgeVideo"
+           poster="assets/img/surge-athlete.jpg"
+           width="1280" height="720"
+           muted loop playsinline preload="metadata">
+      <source src="assets/video/aminok.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <button class="sound-btn" id="surgeSound" type="button" aria-pressed="false" aria-label="배경 영상 소리 켜기">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M4 9v6h4l5 4V5L8 9H4z"/>
+      <g class="wave"><path d="M16.5 8.5a5 5 0 0 1 0 7"/><path d="M19 6a8.5 8.5 0 0 1 0 12"/></g>
+    </svg>
+    <span id="surgeSoundLabel">소리 켜기</span>
+  </button>
+
   <div class="surge-particles" aria-hidden="true">
     <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
     <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
